@@ -27,19 +27,27 @@ function calcularIMC() {
 
 
      if(resultadoImc < 18.5){
-     caracteristica="BAJO PESO";
+          caracteristica="BAJO PESO";
+          imagen = "img/bajopeso.jpg"
      }else if (resultadoImc < 25) {
           caracteristica="NORMAL";
+          imagen = "img/normal.jpg"
+
      }else if (resultadoImc < 30) {
           caracteristica="SOBREPESO";
+          imagen = "img/sobrepeso.jpg"
+
      }else{
           caracteristica = "OBESIDAD";
+          imagen = "img/obesidad.jpg"
+
      }
 
      console.log("su caracteristica es: "+caracteristica + " su resultado IMC:"+resultadoImc);
 
-     document.getElementById("valorIMC").textContent = resultadoImc;
+     document.getElementById("valorIMC").textContent = resultadoImc.toFixed(2);
      document.getElementById("categoriaIMC").textContent = caracteristica;
+     document.getElementById("imagenIMC").src = imagen;
 }
 
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculadora de mi APP</h1>
+
+    <div id="calculadora">
+        <p>
+        <label for="nombre">Ingrese su nombre señor cliente</label>
+        <input type="text" name="nombre" id="nombre" >
+    </p>
+
+    <p>
+        <label for="tipoApp">Que tipo de app quiere</label>
+        <select name="tipoApp" id="tipoApp">
+            <option value="">Seleccione</option>
+            <option value="Futbol">Futbol</option>
+            <option value="Uber">Uber</option>
+            <option value="Reservas">Reservas</option>
+            <option value="Citas">Citas</option>
+        </select>
+    </p>
+    <p>
+        <label for="numeroInternas">Cuantas vistas internas tendrá la app</label>
+        <input type="range" name="numeroInternas" id="numeroInternas" min="1" max="10">
+    </p>
+
+    <p>
+        <h3>Intereses</h3>
+        <label for="Futbol">Futbol</label>
+        <input type="checkbox" name="Futbol" id="Futbol">
+    </p>
+
+    <button id="calcularPrecioApp">Calcular mi App</button>
+    </div>
+
+    <p id="costoApp">
+        <span id="nombreCliente"></span><br>
+        <span id="mensaje"></span>
+    </p>
+
+    <script src="calcular_app.js"></script>
+</body>
+</html>
